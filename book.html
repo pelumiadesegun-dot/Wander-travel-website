@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+        <section id="Book-now">
+            <h2 class="top">Ready to Book Your Adventure?</h2>
+            <p><strong>Limited spots available for our summer 2024 escapes!</strong></p>
+            <p>Fill out the form below to start planning your dream vacation.  <br>A travel consultant will contact you within 24 hours.</p>
+            <form method="post" action="#booking">
+               <fieldset>
+                <legend>
+                    <span>Personal Information</span>
+                </legend>
+                <div class="divider"></div>
+                 <div class="flex">
+                <div class="name">
+                <label for="name">FULL NAME:</label>
+                <input type="text" placeholder="e.g John Doe" required id="name" autocomplete="name">
+                </div>
+                <div class="email">
+                <label for="email">EMAIL ADDRESS:</label>
+               <input type="email" placeholder="example@gmail.com" required id="email" autocomplete="email">
+                </div>
+                <div class="number">
+                <label for="phone-number">PHONE NUMBER:</label>
+                <input type="tel"  placeholder="+234 000 000 0000" required id="phone-number" autocomplete="tel">
+                </div>
+                </div>
+               </fieldset> 
+               <fieldset>
+                <legend> <span> Travel Preference</span></legend> 
+                <div class="divider"></div>
+                <div class="flex1">
+                    <div class="destination">
+                <label for="destination"> Interested Destination:</label> <br>
+                <Select id="destination" required>
+                       <option value="">-- Select a Destination --</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="swiss">Swiss Alps, Switzerland</option>
+                        <option value="kenya">Kenya Safari</option>
+                        <option value="peru">Machu Picchu, Peru</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="other">Other / Custom Destination</option>
+                </Select>
+                    </div>
+                   <div class="travel-month">
+                 <label for="Travel-month">Preferred Travel Month :</label> <br>
+                 <select id="Travel-month" required>
+                      <option value="">--Select a Month</option>
+                      <option value="January">January</option>
+                      <option value="Febuary">Febuary</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                 </select>
+                   </div>
+                   <div class="number-of-travel">
+                 <label for="Number"> Number of Travel:</label> <br>
+                 <input type="number" id="Number" value="1" max="15" min="1" required>
+                </div>
+                </div>
+                <div class="flex2">
+                    <div class="budget">
+                <label for="Budget">Budget per Person:</label> <br>
+                <select name="Budget" id="Budget" required>
+                    <option value="Budget-Range">--Select Budget Range--</option>
+                    <option value="Under $1500">Under $1500</option>
+                    <option value="$1500 - $2500">$1500 - $2500</option>
+                    <option value="$2500 - $5000">$2500-$5000</option>
+                    <option value="$5000">$5000+</option>
+                </select> <br><br>
+                    </div>
+                    <div class="travel-style">
+                <label >Travel Style Preference:</label>
+                <br>
+                <div class="align">
+                <input type="radio" name="Travel-Style" id="relaxation" value="relaxation">
+                <label for="relaxation" class="move">Relaxation & Beach</label> 
+                </div>
+                <br>
+                <div class="align2">
+                <input type="radio" name="Travel-Style" id="adventure" value="adventure">
+                <label for="adventure" class="move">Adventure & Hiking</label> 
+                </div>
+                <br>
+                <div class="align2">
+                <input type="radio" name="Travel-Style" id="culture" value="culture">
+                <label for="culture" class="move">Culture & History</label>
+                </div>
+                <br>
+                <div class="align2">
+                <input type="radio" name="Travel-Style" id="Wildlife" value="Wildlife">
+                <label for="Wildlife" class="move">Wildlife & Nature</label>
+                </div>
+                <br>
+                <div class="align2">
+                <input type="radio" name="Travel-Style" id="food" value="food">
+                <label for="food" class="move">Food & culinary</label>
+                    </div>
+                    </div>
+                    <div class="soecial-intrest">
+                 <label for="interests">Special Interests (check all that apply):</label>
+                    <br>
+                    <div class="align">
+                    <input type="checkbox" id="photography" name="interests" value="photography">
+                    <label for="photography" class="move">Photography</label>
+                    </div>
+                    <br>
+                    <div class="align2">
+                    <input type="checkbox" id="yoga" name="interests" value="yoga">
+                    <label for="yoga" class="move">Yoga & Wellness</label>
+                    </div>
+                    <br>
+                    <div class="align2">
+                    <input type="checkbox" id="hiking" name="interests" value="hiking">
+                    <label for="hiking" class="move">Hiking & Trekking</label>
+                    </div>
+                    <br>
+                    <div class="align2">
+                    <input type="checkbox" id="local-food" name="interests" value="local-food">
+                    <label for="local-food" class="move">Local Food & Cooking</label>
+                    </div>
+                   <br>
+                   <div class="align2">
+                    <input type="checkbox" id="museums" name="interests" value="museums">
+                    <label for="museums" class="move">Museums & Art</label>
+                    </div>
+                    </div>
+                </div>
+               </fieldset>
+               
+               <fieldset>
+                <legend> <span>Additional Information</span></legend>
+                <div class="divider"></div>
+                <div class="flex3">
+                    <div class="requirements">
+                <label for="Requirement">Tell us about your dream trip:</label>
+                <br>
+                <textarea name="Requirement" id="Requirement" rows="5" cols="50" placeholder="Share any specific requirement or Preference"></textarea>
+                 <br><br>
+                    </div>
+                    <div class="dietry">
+                 <label for="Dietary">Dietry Restrictions</label> <br> 
+                 <textarea name="Dietry" id="Dietary" rows="3" cols="50" placeholder="e.g vegetarian, gluttonius, allergies" class="diet"></textarea> <br> <br>
+                 </div>
+                </div>
+                <div class="align">
+                 <input type="checkbox" id="news">
+                
+                 <label for="news" class="move">Send me Travel tips and exclusive offers via email</label>
+                </div> <br>
+                 <div class="align2">
+
+                  <input type="checkbox" id="policy">
+                  <label for="policy" class="move"> i agree to the <a href="Terms and Conditions">Terms and Conditions</a> and <a href="Policy">Privacy Policy</a></label>
+                 </div>
+               </fieldset>
+               <button type="submit" class="btnn1">Submmit inquiry</button>
+               <button type="reset" class="btnn2">Clear form</button>
+            </form>
+            
+        </section>
+</body>
+</html>
