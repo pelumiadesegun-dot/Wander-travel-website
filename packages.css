@@ -162,12 +162,13 @@ letter-spacing: 2px;
     }
     img{
         width: 180px;
+        object-fit: cover;
     }
     h2{
         font-size: 45px;
     }
     .price{
-        gap: 20px;
+        gap: 10px;
     }
    
 
